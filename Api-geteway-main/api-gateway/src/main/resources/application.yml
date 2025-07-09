@@ -9,12 +9,12 @@ zuul:
   routes:
     user-service:
       path: /users/**
-      url: http://localhost:8083
+      url: http://user-service:8083
       strip-prefix: false
 
     order-service:
       path: /orders/**
-      url: http://localhost:8082
+      url: http://order-service:8082
       strip-prefix: false
 
   host:
